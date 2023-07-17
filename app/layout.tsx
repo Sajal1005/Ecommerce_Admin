@@ -2,7 +2,7 @@ import { ClerkProvider } from '@clerk/nextjs'
 import { Inter } from 'next/font/google'
 
 import { ModalProvider } from '@/providers/modal-provider'
-// import { ToastProvider } from '@/providers/toast-provider'
+import { ToastProvider } from '@/providers/toast-provider'
 // import { ThemeProvider } from '@/providers/theme-provider'
 
 import './globals.css'
@@ -27,8 +27,8 @@ export default async function RootLayout({
             attribute="class" 
             defaultTheme="system" 
             enableSystem
-          >
-            <ToastProvider /> */}
+          > */}
+            <ToastProvider />
             <ModalProvider />
             {children}
           {/* </ThemeProvider> */}
